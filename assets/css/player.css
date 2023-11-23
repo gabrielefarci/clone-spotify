@@ -1,0 +1,112 @@
+#player{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #181818;
+}
+
+.player-song{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.player-song img{
+    height: 65px;
+}
+
+.player-middle button, .audio-handler button{
+    border: 0;
+    background-color: transparent;
+}
+
+.green-btn{
+    color: #1DB954;
+}
+
+.song-artist{
+    font-size: 0.7rem;
+}
+
+.slider{
+    position: relative;
+    width: 300px;
+    height: 4px;
+}
+
+.range{
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 4px;
+    appearance: none;
+    background: transparent;
+    z-index: 1;
+}
+
+.slider progress{
+    width: 300px;
+    height: 4px;
+    appearance: none;
+    position: absolute;
+    top: 0;
+}
+
+.slider progress::-webkit-progress-bar{
+    background: rgba(255, 255, 255, 0.404);
+}
+
+.slider progress::-webkit-progress-value{
+    background: #1DB954;
+}
+
+.range::-webkit-slider-thumb{
+    appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+.right-volume, .slider-volume, .slider-volume progress{
+    width: 80px;
+}
+
+@media screen and (max-width: 760px){
+    #player{
+        position: fixed;
+        width: 92%;
+        bottom: 80px;
+        background-color: #181818;
+        margin-inline: 1rem;
+        border-radius: 10px;
+    }
+    .audio-handler {
+        display: none !important;
+    }
+    .slider {
+        display: none;
+    }
+    .song-artist {
+        display: none;
+    }
+    #undo, #forward, #backward, #random {
+        display: none;
+    }
+    .player-song i {
+        display: none;
+    }
+    .player-song img {
+        width: 40px;
+        height: 40px !important;
+    }
+    #heart {
+        display: block;
+        font-size: 20px;
+    }
+    .player-middle {
+        display: flex;
+        align-items: center;
+    }
+}

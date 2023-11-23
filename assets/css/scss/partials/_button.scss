@@ -1,0 +1,37 @@
+button {
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+ 
+  .button-dark {
+    background: $green;
+    color: $black;
+    border: 20px solid $green;
+    border-radius: 100%;
+    
+    &:hover {
+      background: lighten( $green, 30% );
+    }
+  }
+  
+  .upperButtons{
+    background: rgb(66,57,24);
+    border-radius: 100%;
+    color: $white;
+    border: none;
+    width: 27px;
+    margin-inline: 5px
+}
+
+.buttoncontainer{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+  

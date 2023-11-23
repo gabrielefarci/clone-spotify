@@ -1,0 +1,283 @@
+body {
+    background: linear-gradient(6deg, #1c1d25 50%, #c8ac47);
+    font-family: 'Roboto', sans-serif;
+    
+    a {
+      color: $grey;
+      
+      &:hover {
+        color: $sand;
+      }
+    }
+    
+}
+  #central-card{
+    background: none;
+      img {
+        width: 100vh;
+        box-shadow: black 55px 55px;
+      }
+  }
+
+
+
+.section-title {
+    
+  text-transform: uppercase;
+  color: $grey;
+  letter-spacing: 1.25px;
+  font-size: $x-small * 1.2;
+  margin-bottom: $margin-sm;
+  
+}
+
+.linea {
+  color: $black;
+}
+
+.tracks {
+  
+    & {
+      display: flex;
+      flex-flow: column wrap;
+      margin-bottom: $margin;
+    }
+    
+    &__heading {
+      
+      & {
+        color: $grey;
+        height: 42px;
+        
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+      }
+      
+      &__number {
+        margin-left: $margin-sm;
+        font-style: italic;
+      }
+      
+      &__title {
+        margin-left: 70px;
+        width: 45%;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      
+      &__length {
+        margin-left: auto;
+        font-size: $large;
+      }
+      
+      &__popularity {
+        font-size: $large;
+        margin-left: 55px;
+        padding-right: $padding-sm;
+      }
+      
+    }
+}
+
+.track {
+    border-top: 0px;
+    & {
+      height: 42px;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+    
+    &:hover {
+      background: $light-black;
+    }
+    
+    &:last-child {
+      border-bottom: 1px solid $light-black;
+    }
+    
+    &__art {
+      
+      img {
+        width: 42px;
+        height: 42px;
+      }
+      
+    }
+    
+    &__number {
+      
+      margin-left: $margin-sm;
+      color: $grey;
+      width: 12px;
+      
+    }
+    
+    &__added {
+      
+      margin-left: $margin * 2;
+      color: $sand;
+      
+      .added {
+        color: $sand;
+      }
+      
+      .not-added {
+        color: $grey;
+      }
+      
+    }
+    
+    &__title {
+      width: 45%;
+      margin-left: $margin * 2;
+      color: $white;
+      
+      &.featured {
+        
+        .title {
+          
+          &:after {
+            content: "-";
+            margin: 0 $margin-xs;
+          }
+          
+        }
+        
+        .feature {
+          color: $grey;
+          
+          &:after {
+            content: ",";
+            margin-right: $margin-xs;
+          }
+          
+          &:last-child {
+            
+            &:after {
+              content: "";
+              margin-right: 0;
+            }
+            
+          }
+
+          &:hover {
+            cursor: pointer;
+            color: $sand;
+            text-decoration: underline;
+          }
+          
+        }
+        
+      }
+      
+      
+    }
+    
+    &__explicit {
+      
+      .label {
+        border: 1px;
+        border-style: solid;
+        border-color: lighten( $light-black , 10% );
+        color: lighten( $light-black , 10% );
+        text-transform: uppercase;
+      }
+      
+    }
+    
+    &__plays {
+      
+      color: $grey;
+      margin-left: auto;
+      padding-right: $padding-sm;
+      
+    }
+    
+    &__length {
+      margin-left: auto;
+      color: $grey;
+    }
+    
+    &__popularity {
+      margin-left: 46px;
+      padding-right: $padding-sm;
+      font-size: $large;
+      color: $grey;
+    }
+    
+  } 
+
+  #introduction-title-card {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+    .col-md-3 {
+      flex: 0 0 auto;
+      width: 15%;
+    }
+    
+    .card-title {
+      font-size: small;
+    }
+
+  @media (max-width: 1200px) {
+    
+    .tracks {
+      
+      &__heading {
+        
+        &__title {
+          width: auto;
+        }
+        
+        &__popularity {
+          display: none;
+        }
+        
+      }
+      
+      .track {
+        
+        &__title {
+          width: auto !important;
+        }
+        
+        &__explicit {
+          display: none;
+        }
+        
+        &__popularity {
+          display: none;
+        }
+        
+      }
+      
+    }
+    
+}
+
+
+.controls {
+  width: 346px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #central-card{
+    background: none;
+      img {
+        width: 100vh;
+        box-shadow: black 55px 55px;
+      }
+  }
+
+  #introduction-title-card {
+    font-size: 4rem;
+    font-weight: bold;
+}
+}

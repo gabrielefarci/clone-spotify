@@ -1,0 +1,451 @@
+
+body {
+    font-family: 'Circular';
+}
+
+
+/*layout pagina*/
+
+#topIconsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+#center-screen {
+    overflow: scroll;
+    background: linear-gradient(1deg, #000000 60%, #363636);
+    padding-inline: 3vh;
+
+}
+
+#left-screen{
+    color: #b1b0b0;
+    padding-left: 2vh;
+    
+}
+
+#fixer{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}
+
+#fixerRight{
+    position: sticky;
+    top: 0;
+}
+
+
+/*nav*/
+.nav{
+    margin-top: 2vh;
+    color: rgb(122, 122, 122) !important;
+}
+
+.navButtons{
+    color: #b1b0b0 !important;
+}
+
+#firstNav i {
+    font-size: 1.4rem;
+}
+#iconaStronza{
+    font-size: 1.8rem;
+}
+
+.my-2{
+    margin-bottom: 0.8rem !important;
+}
+#coloredHeart{
+    background: linear-gradient(315deg, rgba(184,178,194,1) 22%, rgba(114,36,204,1) 84%);
+    padding: 0.28rem;
+    border-radius: 3px;
+}
+#coloredBookmark{
+    background-color: #0e5326;
+    padding: 0.3rem 0.45rem;
+    color: #6bb100;
+    font-size: 0.9rem;
+    border-radius: 3px;
+}
+
+
+/*parte asides Homepage*/
+
+#right-aside{
+    color: #b1b0b0;
+}
+.aside-icons{
+    border-radius: 100% !important;
+    width: 40px;
+    height: 40px;
+}
+.iconsImgAside{
+    display: flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#right-aside-title{
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.righterCol{
+    color: #b1b0b0;
+    font-weight: bolder;
+}
+
+.righterColText{
+    margin-bottom : 0px;
+    color: rgb(122, 122, 122);
+    font-size: 0.75rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis !important;
+}
+
+
+.righterP{
+    margin-top: 0;
+    margin-bottom: 0.3rem !important;
+}
+
+#left-aside{
+    display : flex;
+    flex-direction : column;
+    overflow : scroll;
+    height: 100vh;
+    font-size: 0.9rem;
+}
+
+
+#left-aside::-webkit-scrollbar {
+    width: 10px;
+}
+
+#left-aside::-webkit-scrollbar-track {
+    background: black;
+}
+
+#left-aside::-webkit-scrollbar-thumb {
+    background: rgb(80, 80, 80);
+}
+
+.rightAsideCard{
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+/*Parte centrale */
+
+#right-aside-title > div > i.fas.fa-times{
+    margin-left: 1rem;
+}
+
+.titoletto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fa-cog{
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+}
+.fa-bell{
+    margin-right: 1.5rem;
+     font-size: 1.5rem;
+}
+.fa-clock{
+    margin-right: 1.5rem;
+    font-size : 1.5rem;
+}
+
+.card-link{
+    color: white;
+    text-decoration: none;
+}
+
+.upperButtons{
+    background: black;
+    border-radius: 100%;
+    color: gray;
+    border: none;
+    width: 25px;
+    margin-inline: 5px
+}
+
+.buttoncontainer{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+#central-card{
+    background: linear-gradient(3deg, #121212 70%, #323232)
+}
+
+#introduction-title-card{
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+
+#center-screen::-webkit-scrollbar {
+    width: 10px;
+}
+
+#center-screen::-webkit-scrollbar-track {
+    background: black;
+}
+
+#center-screen::-webkit-scrollbar-thumb {
+    background: rgb(80, 80, 80);
+}
+
+#center-screen::-webkit-scrollbar-button {
+    display: none !important;
+    background-color: black !important;
+}
+
+
+.rowBuonasera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    min-width: 176px;
+    max-height: 95px;
+    min-height: 75px;
+}
+.colBuonasera{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+}
+
+#cardTitle{
+    font-size: 1rem;
+}
+.card-text {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#introButtonPlay{
+    border-radius: 30px;
+    padding: 10px;
+    width: 7rem;
+    background-color: #1DB954;
+    color: black !important;
+    font-weight: 600;
+}
+
+#introButtonSalva{
+    border-radius: 30px;
+    padding: 10px;
+    width: 7rem;
+    background-color: #000000;
+    color: white !important;
+    font-weight: 600;
+}
+
+#buonaseraTitle{
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.cardCentralBuonasera{
+    display: flex;
+    background-color:#171717;
+    color: white;
+    font-weight: 700;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buonaseraCard{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cardRightSideBuonasera{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.centralPlaylistCard{
+    padding: 0.5vh;
+    background-color: #171717;
+    color: white;
+    height: 20rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    display: contents;
+}
+.centralPlaylistCardBody{
+    position: relative;
+    padding: 0.6rem;
+}
+
+.colCentralPlaylistCard{
+    margin-right: 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.cardP{
+    color: gray;
+}
+.card-link{
+    text-decoration: none !important;
+    color: white;
+}
+
+/*RESPONSIVE*/
+
+.row.row-cols-5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.row-cols-3{
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+
+/* NAVBAR PICCOLA IN RESPONSIVE*/
+
+#smallNavbar{
+    overflow: hidden;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8183648459383753) 70%, rgba(0,0,0,0) 100%);
+}
+#smallNavbarLinks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+}
+#smallerContainer{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;    
+}
+
+.smallerNavLink{
+    color:rgb(185 177 177);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*STUFF IN HOVER*/
+
+#play-button {
+    background-color: #3cd75f;
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 2.2rem;
+    right: 0.3rem;
+    display: none;
+}
+.fa-times{
+    margin-left: 1rem; 
+}
+
+#play-button i {
+    padding: 10px;
+}
+
+.card:hover #play-button {
+    display: block;
+}
+
+
+.smallerNavLink:hover {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.smallerNavLink:active {
+    color: rgb(255, 255, 255);
+  }
+.smallerNavLink:visited {
+    color: rgb(255, 255, 255);
+  }
+
+@media screen and (max-width: 760px){
+    #player{
+    position: fixed;
+    width: 100%;
+    bottom: 80px;
+    background-color: #181818;
+    }
+    .buonaseraTitle {
+        font-weight: 700;
+        margin-bottom: 3rem;
+        margin-top: 4rem;
+        font-size: 2rem;
+    }
+    #topButtonsScreen{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 900px){
+    #introduction-title-card{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 901px) and (max-width: 1080px){
+    #introduction-title-card{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (min-width: 1081px) and (max-width: 1380px){
+    #introduction-title-card{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width: 1381px) and (max-width: 1680px){
+    #introduction-title-card{
+        font-size: 3.5rem;
+    }
+}

@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <script src="https://kit.fontawesome.com/6da0b09cf8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/artist.css">
+    <link rel="stylesheet" href="assets/css/circular-font.css">
+    <link rel="stylesheet" href="assets/css/player.css">
+  </head>
+  <body>
+    <div class="container-fluid text-light">
+      <div class="row">
+        <div class="col-2 bg-black" id="left-screen">
+          <div id="fixer"> 
+            <i class="fas fa-ellipsis-h mx-3 mt-3"></i>
+  
+            <!--NAV (left screen)-->
+            <nav>
+              <div class="nav" id="firstNav">
+               <ul class="list-unstyled">
+                  <li class="my-2"><a href="./Homepage.html" class="text-decoration-none navButtons"><i class="fas fa-home-lg-alt mx-3"></i>Home</a></li>
+                  <li class="my-2"><a href="./Search.html" class="text-decoration-none navButtons"><i class="fas fa-search mx-3"></i>Cerca</a></li>
+
+                  
+
+                  <li class="my-2"><a href="#" class="text-decoration-none navButtons"><i class="fas fa-book mx-3"></i>la tua libreria</a></li>
+               </ul>
+              </div>
+  
+              <div class="nav" id="secondNav">
+                <ul class="list-unstyled">
+                  <li class="my-2"><a href="#" class="text-decoration-none navButtons"><i class="fas fa-plus-square mx-3" id="iconaStronza"></i>Crea playlist</a></li>
+                  <li class="my-2"><a href="#" class="text-decoration-none navButtons"><i class="fas fa-heart mx-3" id="coloredHeart"></i>Brani che ti piacciono</a></li>
+                  <li class="my-2"><a href="#" class="text-decoration-none navButtons"><i class="fas fa-bookmark mx-3" id="coloredBookmark"></i>I tuoi episodi</a></li>
+                </ul>
+              </div>
+            </nav>
+            
+            <hr class="">
+  
+            <aside id="left-aside">   
+              <p>Playlist musica jazz</p>
+              <p>Non so cosa scrivere ormai ma vabbe</p>
+              <p>Tokyo drift </p>
+              <p>Hit me baby one more time!</p>
+              <p>Che dio ci aiuti..</p>
+              <p>Sera tardi</p>
+              <p>Un altra random playlist per te</p>
+              <p>Wow Bang bang</p>
+              <p>C'era una volta, cosa?</p>
+              <p>Metallica abbestia</p>
+              <p>Il Napoli ha vinto lo scudetto</p>
+              <p>Oddio basta, ho finito la fantasia</p>
+              <p>E sono solo alla meta di random playlist</p>
+              <p>Oggi e un giorno piovoso</p>
+              <p>Ma sono contento perche tanto devo stare</p>
+              <p>Sempre al computer a fare cose.</p>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+              <p>Sotto la panca la capra crepa</p>
+              <p>Sad playlist.</p>
+              <p>Hip hop hardcore 96' Cuban Linx</p>
+              <p>Credici e sarai felice</p>
+              <p>Croce rossa all'arrembaggio</p>
+              <p>Rombi di tuono nel cielo</p>
+              <p>Daje che ci siamo</p>
+              <p>Yes</p>
+              <p>Finito sta lista di cose.</p>
+            </aside>
+          </div>
+        </div>
+            
+        <div class="col col-md-8 bg-dark" id="main-col">
+          <div class="row">
+            <div class="col d-flex flex-column justify-content-end" id="artist-information">
+              <div class="buttoncontainer d-flex">
+                <button><i class="fas fa-chevron-left"></i></button>
+                <button class="d-none d-md-block"><i class="fas fa-chevron-right"></i></button>
+              </div>
+              <p id="certificate-artist"><i class="fas fa-certificate" id="certificate"><i class="fas fa-check" id="check"></i></i>Artista verificato</p>
+              <h1 id="name-artist"></h1>
+              <p><span id="listeners"></span> ascoltatori mensili</p>
+            </div> 
+          </div>
+          <div class="row mt-3">
+            <div class="col d-flex align-items-center">
+              <button id="play-button"><i class="fas fa-play"></i></button>
+              <button id="following-button">FOLLOWING</button>
+              <i class="fas fa-ellipsis-h" id="dots-h"></i>
+              <i class="fas fa-ellipsis-v" id="dots-v"></i>
+            </div>
+            <div class="col d-flex align-items-center justify-content-end d-md-none">
+              <i class="fas fa-random green-btn mx-3"></i>
+              <button id="play-button-mobile"><i class="fas fa-play"></i></button>
+            </div>
+          </div>
+          <div class="row mt-md-4 d-flex flex-column-reverse d-md-flex flex-md-row align-items-md-start">
+            <div class="col-6 col-md-8">
+              <h5>Popolari</h5>
+            </div>
+            <div class="col-8 col-md-4 d-flex align-items-start flex-md-column-reverse my-2">
+              <h5>Brani che ti piacciono</h5>
+            </div>
+          </div>
+          <div class="row px-md-4 mt-3">
+            <div class="col-md-8">
+              <div id="popular-songs">
+                <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center gap-2 artist-song-content">
+                    <p>1</p>
+                    <i class="fas fa-play" style="color: #ffffff;"></i>
+                    <img src="" alt="">
+                    <h6 class="m-0"></h6>
+                  </div>
+                  <p class="streaming-number flex-grow-1 text-end">23526</p>
+                  <i class="fas fa-ellipsis-v" id="vertical-dots"></i>
+                  <p class="duration flex-grow-1 text-end"></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center gap-2 artist-song-content">
+                    <p>2</p>
+                    <i class="fas fa-play" style="color: #ffffff;"></i>
+                    <img src="" alt="">
+                    <h6 class="m-0"></h6>
+                  </div>
+                  <p class="streaming-number flex-grow-1 text-end">23526</p>
+                  <i class="fas fa-ellipsis-v" id="vertical-dots"></i>
+                  <p class="duration flex-grow-1 text-end"></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center gap-2 artist-song-content">
+                    <p>3</p>
+                    <i class="fas fa-play" style="color: #ffffff;"></i>
+                    <img src="" alt="">
+                    <h6 class="m-0"></h6>
+                  </div>
+                  <p class="streaming-number flex-grow-1 text-end">23526</p>
+                  <i class="fas fa-ellipsis-v" id="vertical-dots"></i>
+                  <p class="duration flex-grow-1 text-end"></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center gap-2 artist-song-content">
+                    <p>4</p>
+                    <i class="fas fa-play" style="color: #ffffff;"></i>
+                    <img src="" alt="">
+                    <h6 class="m-0"></h6>
+                  </div>
+                  <p class="streaming-number flex-grow-1 text-end">23526</p>
+                  <i class="fas fa-ellipsis-v" id="vertical-dots"></i>
+                  <p class="duration flex-grow-1 text-end"></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="d-flex align-items-center gap-2 artist-song-content">
+                    <p>5</p>
+                    <i class="fas fa-play" style="color: #ffffff;"></i>
+                    <img src="" alt="">
+                    <h6 class="m-0"></h6>
+                  </div>
+                  <p class="streaming-number flex-grow-1 text-end">23526</p>
+                  <i class="fas fa-ellipsis-v" id="vertical-dots"></i>
+                  <p class="duration flex-grow-1 text-end"></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="d-flex align-items-md-end">
+                <img src="assets/imgs/main/image-12.jpg" id="cover-favourite-songs" alt="">
+                <div class="mx-2" id="favourite-songs">
+                  <p>Hai messo mi piace a 8 brani dei Queen</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row px-4">
+            <div class="col">
+              <a href="#" id="more-songs">VISUALIZZA ALTRO</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-2 bg-black" id="right-screen">
+          <div id="fixerRight"> 
+            <div class="d-flex align-items-center justify-content-between" id="right-aside-title"> 
+              <h5>Attivita amici</h5>  <div>  <i class="fas fa-user-plus"></i> <i class="fas fa-times"></i> </div>
+            </div>
+
+            <aside id="right-aside">
+              <div class="col righterCol">
+                <div class="card mb-3 bg-black text-gray">
+                  <div class="row g-0">
+                    <div class="col-md-2 iconsImgAside">
+                      <img src="assets/imgs/main/image07.jpeg" class="img-fluid aside-icons" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <div  class="d-flex align-items-center justify-content-between"> 
+                          <p class="card-text fw-bold righterColText">Davide Aprea</p>  <p class="righterP">4ore</p>
+                        </div>
+                        <p class="card-text righterColText">Ascoltando music!</p>
+                        <p class="card-text righterColText">@EP Amico</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col righterCol">
+                <div class="card mb-3 bg-black text-gray">
+                  <div class="row g-0">
+                    <div class="col-md-2 iconsImgAside">
+                      <img src="assets/imgs/main/image09.jpeg" class="img-fluid aside-icons" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between"> 
+                          <p class="card-text fw-bold righterColText">Gabriele Farci</p> <p class="righterP">4ore</p>
+                        </div>
+                        <p class="card-text righterColText">Facendo cose..!</p>
+                        <p class="card-text righterColText">@ Amico</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col righterCol">
+                <div class="card mb-3 bg-black text-gray">
+                  <div class="row g-0">
+                    <div class="col-md-2 iconsImgAside">
+                      <img src="assets/imgs/main/image11.jpeg" class="img-fluid aside-icons" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <p class="card-text fw-bold righterColText">Manuel Altruda</p> <p class="righterP">4ore</p>
+                        </div>
+                          <p class="card-text righterColText">Chilling!</p>
+                          <p class="card-text righterColText"><i class="fas fa-volume-up"></i> Friend</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="player" class="d-flex justify-content-between align-items-center p-3">
+      <div class="player-song">
+        <img src="assets/imgs/main/image-1.jpg" alt="">
+        <div class="song-player">
+          <p class="m-0 fw-bold text-white">Fat Funny Friend</p>
+          <p class="m-0 text-white-50 song-artist">Maddie Zahm</p>
+        </div>
+        <i class="fa-regular fa-heart text-white-50"></i>
+      </div>
+
+      <div>
+        <div class="player-middle d-flex justify-content-center gap-2">
+          <button><i class="fas fa-random green-btn"></i></button>
+          <button><i class="fas fa-step-backward text-white-50"></i></button>
+          <button><i class="fas fa-play-circle text-white fs-2"></i></button>
+          <button><i class="fas fa-step-forward text-white-50"></i></button>
+          <button><i class="fas fa-undo green-btn"></i></button>
+        </div>
+        <div class="d-flex align-items-center gap-2">
+            <span class="text-white-50 song-artist">0:58</span>
+            <div class="slider">
+              <input type="range" class="range">
+              <progress min="0" max="100" value="50"></progress>
+            </div>
+            <span class="text-white-50 song-artist">3:20</span>
+        </div>
+      </div>
+
+      <div class="audio-handler d-flex align-items-center">
+          <button><i class="fas fa-microphone text-white-50"></i></button>
+          <button><i class="fas fa-bars text-white-50"></i></button>
+          <button><i class="fas fa-headphones text-white-50"></i></button>
+          <button><i class="fas fa-volume-down text-white-50"></i></button>
+          <div class="slider slider-volume">
+              <input type="range" class="range right-volume" value="100">
+              <progress min="0" max="100" value="100"></progress>
+          </div>
+          <button><i class="fas fa-expand-alt text-white-50"></i></button>
+      </div>
+    </section>
+
+    <nav id="smallNavbar" class="navbar navbar-expand-lg navbar-light d-md-none">
+      <div id="smallerContainer"> 
+        <ul class="navbar-nav" id="smallNavbarLinks">
+          <li class="nav-item active">
+            <a class="nav-link smallerNavLink" href="Homepage.html"><i class="fas fa-home-lg-alt mx-3"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smallerNavLink" href="Search.html"><i class="fas fa-search mx-3"></i>Cerca</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link smallerNavLink" href="#"><i class="fas fa-book mx-3"></i>La tua libreria</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      let slider=document.querySelector(".range");
+      slider.addEventListener("input", ()=>{
+          progressBar=document.querySelector(".slider progress");
+          progressBar.value=slider.value;
+      })
+    </script>
+
+    <script src="./assets/js/artist.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
